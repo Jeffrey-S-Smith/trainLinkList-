@@ -10,11 +10,17 @@ You start at the front of the train.
 
 ## Visual
 
-## Train 
+## Train
 
 ```mermaid
 graph LR
 head --> A(Node)-->|link| B(Node)
+B--> |link| C[null]
+```
+
+```mermaid
+graph LR
+head node --> node --> A(info)-->|link| --> node --> B(info)
 B--> |link| C[null]
 ```
 
