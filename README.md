@@ -12,7 +12,8 @@ You start at the front of the train.
 
 ```mermaid
 graph LR
- Train --> Head --> A[info] 
+ Train 
+ Head --> A[info] 
   A --> B[info]
   B --> C[null]
 ```
