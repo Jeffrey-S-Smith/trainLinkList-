@@ -11,7 +11,8 @@ You start at the front of the train.
 ## Visual
 ```mermaid
 graph LR
- Train --> A[Head] --> B[data]
+ Train --> Head --> A[info(storeTotal[count])] 
+  A --> B[info]
   B --> C[null]
          
 ```
