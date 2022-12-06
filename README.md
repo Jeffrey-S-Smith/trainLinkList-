@@ -14,9 +14,8 @@ You start at the front of the train.
 
 ```mermaid
 graph LR
-subgraph "Head"
-subgraph "Node1"[value] --> subgraph "Node2"[value]
-Node2 --> subgraph""[null]
+A(head)[info][link]-->B(info)[link]
+B-->C(null)[]
 ```
 
 ```mermaid
