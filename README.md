@@ -15,7 +15,7 @@ You start at the front of the train.
 ```mermaid
 graph LR
 head --> A(info)-->B(info)
-B-->C(null)
+B-->C[null]
 ```
 
 ```mermaid
