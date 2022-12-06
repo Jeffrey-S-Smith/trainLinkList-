@@ -9,12 +9,19 @@ You have a train. You have to add up all the passengers on the train, but you do
 You start at the front of the train.
 
 ## Visual
+
 ```mermaid
 graph LR
  Train --> Head --> A[info] 
   A --> B[info]
   B --> C[null]
-         
+```
+
+```mermaid
+graph LR
+ Head --> A[info] 
+  A --> B[info]
+  B --> C[null]
 ```
 
 ## Algorithm
