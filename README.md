@@ -20,7 +20,7 @@ B-->C[null]
 
 ```mermaid
 graph LR
-head --> A(Node)B'LINK'-->C(Node)D'LINK'
+head --> A(Node),B'LINK'-->C(Node),D'LINK'
 D-->C[null]
 ```
 
