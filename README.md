@@ -24,6 +24,34 @@ graph LR
 B--> |link| C[null]
 ```
 
+## Node A
+
+- count Passengers say there is 20
+- need to store 20
+- storeTotalCount = 20
+- check if there is next
+- if there is a next then move to next
+
+```mermaid
+graph LR
+ start --> A(20)--> |link| B(info)
+B--> |link| C[null]
+```
+
+## Node B 
+
+- count Passengers say there is 10
+- need to store 10
+- newStoreTotalCount = 10
+- then need to add storeTotalCount to newStoreTotalCount
+-
+
+```mermaid
+graph LR
+ start --> A(20)--> |link| B()
+B--> |link| C[null]
+```
+
 ## Algorithm
 
 1. You start at front of the Train (Head)
