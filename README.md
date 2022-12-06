@@ -11,11 +11,8 @@ You start at the front of the train.
 ## Visual
 ```mermaid
 graph LR
-    Train -->            
-    Head --> 
-    A[] --> B[]
-    --> Tail
-    B --> C[null]
+ Train --> A[Head] --> B[]
+  B --> C[null]
          
 ```
 
