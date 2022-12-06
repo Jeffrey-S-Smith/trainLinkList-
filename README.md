@@ -46,7 +46,7 @@ B--> |link| C[null]
 - then need to add storeTotalCount to newStoreTotalCount
 - Then store new total into storeTotalCount
 - check if there is next
-- if there is a next then move to next
+- if there is a next then move to next else if there is no next then return storeTotalCount
 
 ```mermaid
 graph LR
