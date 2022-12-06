@@ -11,7 +11,7 @@ You start at the front of the train.
 ## Visual
 ```mermaid
 graph LR
- Train --> A[Head] --> B[]
+ Train --> A[Head] --> B[data]
   B --> C[null]
          
 ```
