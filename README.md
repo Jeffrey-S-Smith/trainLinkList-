@@ -20,7 +20,7 @@ B--> |link| C[null]
 
 ```mermaid
 graph LR
-head node --> node --> A(info)-->|link| --> node --> B(info)
+head node -->|node|A(info)-->|link| -->|node|B(info)
 B--> |link| C[null]
 ```
 
