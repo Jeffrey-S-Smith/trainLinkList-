@@ -14,9 +14,9 @@ You start at the front of the train.
 
 ```mermaid
 graph LR
- Head --> A[info],'START_LINK'
-  A --> B[info]
-  B --> C[null]
+subgraph "Head"
+subgraph "Node1"[value] --> subgraph "Node2"[value]
+Node2 --> subgraph""[null]
 ```
 
 ```mermaid
