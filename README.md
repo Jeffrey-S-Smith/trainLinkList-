@@ -20,9 +20,8 @@ B-->C[null]
 
 ```mermaid
 graph LR
- Head --> A[info] 
-  A --> B[info]
-  B --> C[null]
+head --> A(Node)B(link)-->C(Node)D(link)
+D-->C[null]
 ```
 
 ## Algorithm
