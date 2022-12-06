@@ -14,13 +14,13 @@ You start at the front of the train.
 
 ```mermaid
 graph LR
-head node-- A(Node)-->|link| B(Node)
+head node --> A(Node)-->|link| B(Node)
 B--> |link| C[null]
 ```
 
 ```mermaid
 graph LR
- start -- A(info)--> |link| B(info)
+ start --> A(info)--> |link| B(info)
 B--> |link| C[null]
 ```
 
