@@ -38,17 +38,19 @@ graph LR
 B--> |link| C[null]
 ```
 
-## Node B 
+## Node B
 
 - count Passengers say there is 10
 - need to store 10
 - newStoreTotalCount = 10
 - then need to add storeTotalCount to newStoreTotalCount
--
+- Then store new total into storeTotalCount
+- check if there is next
+- if there is a next then move to next
 
 ```mermaid
 graph LR
- start --> A(20)--> |link| B()
+ start --> A(20)--> |link| B(10)
 B--> |link| C[null]
 ```
 
