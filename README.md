@@ -14,7 +14,7 @@ You start at the front of the train.
 
 ```mermaid
 graph LR
-head --> A(Node)-->|link| B(Node)
+head --> A(Node A)-->|link| B(Node B)
 B--> |link| C[null]
 ```
 
@@ -64,6 +64,7 @@ B--> |link| C[null]
 6. Then return store total amount of passengers on train.
 
 ## Pseudocode
+
 
 ## Code
 
