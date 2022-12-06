@@ -14,7 +14,7 @@ You start at the front of the train.
 
 ```mermaid
 graph LR
-A(head)[info]-->B(info)
+head --> A(info)-->B(info)
 B-->C(null)
 ```
 
