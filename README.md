@@ -10,9 +10,10 @@ You start at the front of the train.
 
 ## Visual
 
+## Train 
+
 ```mermaid
 graph LR
- Train 
  Head --> A[info] 
   A --> B[info]
   B --> C[null]
