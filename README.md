@@ -28,9 +28,10 @@ B--> |link| C[null]
 
 - count Passengers say there is 20
 - need to store 20
-- storeTotalCount = 20
+- newData = 20
 - check if there is next
 - if there is a next then move to next
+- there is a next
 
 ```mermaid
 graph LR
@@ -42,8 +43,8 @@ B--> |link| C[null]
 
 - count Passengers say there is 10
 - need to store 10
-- newStoreTotalCount = 10
-- then need to add storeTotalCount to newStoreTotalCount
+- new data = 10
+- then need to add the data
 - Then store new total into storeTotalCount
 - check if there is next
 - if there is a next then move to next else if there is no next then return storeTotalCount
@@ -65,6 +66,36 @@ B--> |link| C[null]
 
 ## Pseudocode
 
+- node of the Linked List
+- create node
+- function to insert a node at the beginning
+- function push (head, newData) {
+  - assign node
+  - let newNode = to new Node();
+    - put in the data
+    - newNode.data = newData;
+    - where you link the old list of node to new node
+    - newNode.next = head;
+    - move the head to point to the new nodes
+    - head = newNode;
+    - return head;
+}
+
+- function to recursively find the sum of
+- nodes of the given linked list
+  - function sumOfNodes(head) {
+
+    - if head equal null
+      - if (head == null)
+      - return;
+
+    - recursively traverse the remaining nodes
+    - sumOfNodes(head.next);
+
+    - acquire the sum
+    - sum = sum + head.data;
+
+  }
 
 ## Code
 
