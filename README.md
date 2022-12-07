@@ -70,8 +70,8 @@ B--> |link| C[null]
 
 ## Pseudocode
 
-1. Initialize a pointer ptr with the head of the linked list and a sum variable with 0.
-2. Start traversing the linked list using a loop until all the nodes get traversed.
+1. Set the value of the pointer (ptr) to the head of the linked list and a sum variable with 0.
+2. Traversing the linked list using a loop until all the nodes get traversed.
     - Add the value of current node to the sum. sum += ptr -> data .
     - Increment the pointer to the next node of linked list. ptr = ptr ->next .
 3. Return the sum.
