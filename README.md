@@ -27,8 +27,8 @@ B--> |link| C[null]
 ## Node A
 
 - count Passengers say there is 20
-- need to store 20
 - node data = 20
+- need to store 20
 - check if there is next
 - if there is a next then move to next
 - there is a next
@@ -42,8 +42,8 @@ B--> |link| C[null]
 ## Node B
 
 - count Passengers say there is 10
-- need to store 10
 - node data = 10
+- need to store 10
 - then need to add the data
 - Then store new total into storeTotalCount
 - check if there is next
@@ -54,6 +54,8 @@ graph LR
  start --> A(20)--> |link| B(10)
 B--> |link| C[null]
 ```
+
+## Output: 30
 
 ## Algorithm
 
