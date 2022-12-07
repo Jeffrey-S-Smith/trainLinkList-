@@ -27,10 +27,10 @@ B--> |link| C[null]
 ## Node A
 
 - count Passengers say there is 20
-- node data = 20
 - need to store 20
+- node data = 20
 - check if there is next
-- if there is a next then move to next
+- if there is a next then move to next else if no next stop
 - there is a next
 
 ```mermaid
@@ -42,12 +42,14 @@ B--> |link| C[null]
 ## Node B
 
 - count Passengers say there is 10
-- node data = 10
 - need to store 10
-- then need to add the data
-- Then store new total into storeTotalCount
+- node data = 10
+- then you need to add the two node data to get the sum.
+- Then store the sum
 - check if there is next
-- if there is a next then move to next else if there is no next then return storeTotalCount
+- if there is a next then move to next else if there is no next stop
+- there is no next
+- stop and return the sum
 
 ```mermaid
 graph LR
