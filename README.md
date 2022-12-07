@@ -100,14 +100,14 @@ B--> |link| C[null]
 
 - create a function to find the sum of nodes
   - function sumOfNodes(head) {
-      let ptr = head;
-        let sum = 0;
-        while (ptr != null) {
+    - let ptr = head;
+      - let sum = 0;
+        - while (ptr != null) {
           sum += ptr.data;
            ptr = ptr.next;
         }
   
-    return sum;
+    - return sum;
     }
 
 ## Code
