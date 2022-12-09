@@ -72,8 +72,8 @@ B--> |link| C[null]
 
 1. Set the value of the pointer (ptr) to the head of the linked list and a sum variable with 0.
 2. Traversing the linked list using a loop until all the nodes get traversed.
-    - Add the value of current node to the sum. sum += ptr -> data .
-    - Increment the pointer to the next node of linked list. ptr = ptr ->next .
+    - Add the value of current node to the sum. sum += pointer -> data .
+    - Increment the pointer to the next node of linked list. pointer = pointer ->next .
 3. Return the sum.
 
 - node of the Linked List
@@ -100,17 +100,63 @@ B--> |link| C[null]
 
 - create a function to find the sum of nodes
   - function sumOfNodes(head) {
-    - let ptr = head;
+    - let pointer = head;
       - let sum = 0;
-        - while (ptr != null) {
-          sum += ptr.data;
-           ptr = ptr.next;
+        - while (pointer != null) {
+          sum += pointer.data;
+          pointer = pointer.next;
         }
   
     - return sum;
     }
 
 ## Code
+
+```js
+
+/*node of the Linked List*/
+let head;
+
+/*create Link list node*/
+class Node {
+  constructor() {
+    this.data = 0;
+    this.next = null;
+  }
+}
+
+/*function to insert a node at the beginning*/
+
+function push(headRef, newData) {
+  
+  /*assign node*/
+    let newNode = to new Node();
+    
+    /*put in the data*/
+      newNode.data = newData;
+      
+      /*link the old node list to the new node*/
+        newNode.next = headRef;
+        
+        /*move the the point to the new node*/
+          headRef = newNode;
+        
+          return head = headRef;
+}
+
+/*create a function to find the sum of nodes*/
+
+function sumOfNodes(head) {
+  let pointer = head;
+
+  let sum = 0;
+    while (pointer != null) { sum += pointer.data; pointer = pointer.next; }
+  
+  return sum; 
+  
+}
+
+```
 
 ## Big O
 
