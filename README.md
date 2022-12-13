@@ -92,7 +92,7 @@ B--> |link| C[null]
         - return head = headRef;
 }
 
-1. Set the value of the pointer (ptr) to the head of the linked list and a sum variable with 0.
+1. Set the value of the pointer (pointer) to the head of the linked list and a sum variable with 0.
 2. Traversing the linked list using a loop until all the nodes get traversed.
     - Add the value of current node to the sum. sum += pointer -> data .
     - Increment the pointer to the next node of linked list. pointer = pointer ->next .
