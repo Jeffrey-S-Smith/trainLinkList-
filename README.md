@@ -169,6 +169,52 @@ function sumOfNodes(head) {
 ## Test
 
 ```js
+'use strict';
+
+const sumOfNodes = require('./sumOfNodes.js');
+
+describe('testing sum of node', () => {
+  test('Adds 2 nodes with a sum of 30', () => {
+    let headNode = {
+      data: 20,
+      next: null,
+    }
+    
+    headNode.next = {
+      data: 10,
+      next: null,
+    }
+
+    let sum = sumOfNodes(headNode);
+    expect(sum).toEqual(30);
+  });
+});
+
+
+Sum of Nodes
+
+// if (sum === 30) {
+//   console.log('We did it');
+// } else {
+//   console.log('Something broke');
+// }
+
+'use strict';
+
+function sumOfNodes(head) {
+  let pointer = head;
+
+  let sum = 0;
+  while(pointer !== null) {
+    sum += pointer.data;
+    pointer = pointer.next;
+  }
+
+  return sum;
+}
+```
+
+```js
 const LinkedList = require ('./filename.js');
 
 describe('Testing Linked List and all methods', () => {
