@@ -70,12 +70,6 @@ B--> |link| C[null]
 
 ## Pseudocode
 
-1. Set the value of the pointer (ptr) to the head of the linked list and a sum variable with 0.
-2. Traversing the linked list using a loop until all the nodes get traversed.
-    - Add the value of current node to the sum. sum += pointer -> data .
-    - Increment the pointer to the next node of linked list. pointer = pointer ->next .
-3. Return the sum.
-
 - node of the Linked List
 - let head;
 - create Link list node
@@ -86,7 +80,7 @@ B--> |link| C[null]
   }
 }
 - function to insert a node at the beginning
-- function push(headRef, newData) {
+- function insertAtHead(headRef, newData) {
   - assign node
   - let newNode = to new Node();
     - put in the data
@@ -97,6 +91,12 @@ B--> |link| C[null]
         - headRef = newNode;
         - return head = headRef;
 }
+
+1. Set the value of the pointer (ptr) to the head of the linked list and a sum variable with 0.
+2. Traversing the linked list using a loop until all the nodes get traversed.
+    - Add the value of current node to the sum. sum += pointer -> data .
+    - Increment the pointer to the next node of linked list. pointer = pointer ->next .
+3. Return the sum.
 
 - create a function to find the sum of nodes
   - function sumOfNodes(head) {
@@ -125,9 +125,15 @@ class Node {
   }
 }
 
+/* for testing*/
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
 /*function to insert a node at the beginning*/
 
-function push(headRef, newData) {
+function insertAtHead(headRef, newData) {
   
   /*assign node*/
     let newNode = to new Node();
@@ -150,12 +156,39 @@ function sumOfNodes(head) {
   let pointer = head;
 
   let sum = 0;
-    while (pointer != null) { sum += pointer.data; pointer = pointer.next; }
+    while (pointer != null) { 
+      sum += pointer.data; 
+      pointer = pointer.next; }
   
   return sum; 
   
 }
 
+```
+
+## Test
+
+```js
+const LinkedList = require ('./filename.js');
+
+describe('Testing Linked List and all methods', () => {
+  test('should create a new linked list', () => {
+    let ll = new LinkedList;
+    expect(ll.head).toEqual(null);
+  });
+
+  test('should point the head to first node', () => {
+    let ll = new LinkedList;
+    ll.insert('20');
+    expect(list.head.data).toEqual('20');
+  });
+
+  test('should properly insert multiple nodes', () => {
+    let ll = new LinkedList;
+    ll.insert('20');
+    ll.insert('10');
+  expect(list.head.data).toEqual('20, 10');
+});
 ```
 
 ## Big O
