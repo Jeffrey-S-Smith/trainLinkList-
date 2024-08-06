@@ -1,6 +1,6 @@
 # trainLinkList-
 
-## Problem Domain
+## Problem Domains
 
 You have a train. You have to add up all the passengers on the train, but you do not know how long the train is.
 
