@@ -141,7 +141,7 @@ function insertAtHead(headRef, newData) {
     /*put in the data*/
       newNode.data = newData;
       
-      /*link the old node list to the new node*/
+      /*link the old node list to the new nodes*/
         newNode.next = headRef;
         
         /*move the the point to the new node*/
